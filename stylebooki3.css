@@ -116,7 +116,7 @@ header{
 }
 h1{margin-bottom: 0;}
 .soustitre{margin-top: 0;}
-#chercher{
+#zone-recherche{
     display: flex;
     height: 50px;
     margin-bottom: 25px;}
@@ -136,7 +136,7 @@ h1{margin-bottom: 0;}
     border: white;
     cursor: pointer;
 }
-.barrerecherche{
+.barre-recherche{
     width: 250px;
     font-weight: bold;
     border:0px;
@@ -149,7 +149,7 @@ input::placeholder{
     position: relative;
     left:15px;
 }
-.fondrecherche{
+.fond-recherche{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,12 +164,12 @@ input::placeholder{
     padding-left: 30px;
 }
 @media screen and (max-width: 991px){
-    .fondrecherche{
+    .fond-recherche{
         width: 50px;
     }
 }
 @media screen and (max-width: 991px){
-    .texterecherche{
+    .texte-recherche{
         visibility: hidden;
     }
 }
@@ -183,24 +183,24 @@ input::placeholder{
         right: 55px;
     }
 }
-#touslesfiltres{
+#tous-les-filtres{
     display: flex;
     width: 85%;
     height: 100%;
     align-items: center;
 }
 @media screen and (max-width: 991px){
-    #touslesfiltres{
+    #tous-les-filtres{
         display: flex;
         flex-direction: column;
     }
 }
-.titrefiltre{
+.titre-filtre{
     display: flex;
     width: 8%;
 }
 @media screen and (max-width: 991px){
-    .titrefiltre{
+    .titre-filtre{
         display: flex;
         width: 100%;}
 }
@@ -238,7 +238,7 @@ input::placeholder{
     display: flex;
     justify-content: space-between; 
 }
-.logofiltre{
+.logo-filtre{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +249,7 @@ input::placeholder{
     background-color: #deebff;
     margin-left: -6%;
 }
-.textefiltre{
+.texte-filtre{
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -262,7 +262,7 @@ input::placeholder{
     align-items: center;
     position: relative;
 }
-#logoi{
+#logo-i{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,18 +286,18 @@ input::placeholder{
         flex-direction: column-reverse;
     }
 }
-.headerheb{
+.header-heb{
     display: block;
     width: 100%;
     margin-top: 2.5%;
     margin-left: 3%;
 }
 @media screen and (max-width: 767px){
-    .headerheb{
+    .header-heb{
     margin-left: 5%;
     }
 }
-#zonehebergemnt{
+#zone-hebergemnt{
     display: flex;
     flex-direction: column;
     width: 66%;
@@ -307,13 +307,13 @@ input::placeholder{
     flex-wrap: wrap;
     }
 @media screen and (max-width: 991px){
-    #zonehebergemnt{
+    #zone-hebergemnt{
         background-color: white;
         width: 100%;
         height: 1200px;
     }
 }
-#zonepopulaire{
+#zone-populaire{
     display: flex;
     flex-direction: column;
     width:33%;
@@ -322,13 +322,13 @@ input::placeholder{
     border-radius: 25px;
 }
 @media screen and (max-width: 991px){
-    #zonepopulaire{
+    #zone-populaire{
         width: 100%;
         border-radius: 0 0 0 0 ;
         margin-bottom: 15px;
     }
 }
-#headerpop{
+#header-pop{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -336,7 +336,7 @@ input::placeholder{
     top: 10px;
 }
 @media screen and (max-width: 991px){
-    #headerpop{
+    #header-pop{
         display:flex;
         justify-content: space-between;
         flex-direction: row;}
@@ -361,7 +361,7 @@ input::placeholder{
 
 }
 alt{visibility: hidden;}
-.cartepop{
+.carte-pop{
     display: flex;
     width:90%;
     background-color: white;
@@ -370,17 +370,17 @@ alt{visibility: hidden;}
     height: 25%;
     margin-bottom: 30px;
 }
-.cartepop:hover{
+.carte-pop:hover{
     box-shadow: 5px 5px 5px 5px #deebff;
 }
-.imgbox{
+.img-boite{
     display: flex;
     width: 40%;
     height: 100%;
     border-radius: 25px 0 0 25px;
     overflow: hidden;
 }
-.imgsize{
+.img-taille{
     display:flex;
     border-radius: 25px 0 0 25px;
     margin:5px;
@@ -388,13 +388,13 @@ alt{visibility: hidden;}
     overflow: hidden;
     object-fit: cover;
     }
-.textepop{
+.texte-pop{
     display:flex;
     flex-direction: column; 
     height: 70%;
     justify-content: space-around;
 }
-.texteprix1{
+.texte-prix1{
     position: relative;
     top: -45px;
     left: 5px;
@@ -441,7 +441,7 @@ h4{
          align-items: center;
         }
     }
-.carteheb{
+.carte-heb{
     display: flex;
     width:28%;
     flex-direction: column;
@@ -451,7 +451,7 @@ h4{
     height: 40%;
     }
 @media screen and (max-width: 991px){
-    .carteheb{
+    .carte-heb{
         width: 45%;
         display: flex;
         justify-content: center;
@@ -461,15 +461,15 @@ h4{
     }
 }
 @media screen and (max-width: 767px){
-    .carteheb{
+    .carte-heb{
     width:90%;
     height: 25%;
     }
 }
-.carteheb:hover{
+.carte-heb:hover{
     box-shadow: 5px 5px 5px 5px #deebff;
 }
-.imgbox2{
+.img-boite2{
         display: flex;
         justify-content: center;
         width: 100%;
@@ -482,17 +482,17 @@ h4{
         
 }
 @media screen and (max-width: 991px){
-    .imgbox2{
+    .img-boite2{
         height: 60%;
     }
 }
-.imgsize2{
+.img-taille2{
     border-radius: 25px 25px 0 0 ;
     width: 95%;
     overflow-y: hidden;
     object-fit: cover;
     }
-.texteheb{
+.texte-heb{
     display:flex;
     flex-direction: column;
     width: 100%;
@@ -502,52 +502,52 @@ h4{
     justify-content:space-between;
 }
 @media screen and (max-width: 991px){
-    .texteheb{
+    .texte-heb{
     margin-left: 5px;
     }
 }
 @media screen and (max-width: 767px){
-    .texteheb{
+    .texte-heb{
         margin-top: 10px;
         margin-left: 10px;
     }
 }
-.texteprix{
+.texte-prix{
     margin: 0px;
     position: relative;
     top: -5px;
 }
 @media screen and (max-width: 767px){
-    .texteprix{
+    .texte-prix{
     position: relative;
     top:-25px;
     left: 5px;
     }
 }
-.texteprix1{
+.texte-prix1{
     margin: 0px;
     position:relative;
     top: -5px;
 }
 @media screen and (max-width:1056px) {
-    .texteprix1{
+    .texte-prix1{
         position: relative;
         top: -25px;
     }
 }
 .etoile1{
     position: relative;
-    top: 1%;
+    top: 10px;
 }  
 @media screen and (max-width:1056px) {
     .etoile1{
         position: relative;
-        top: -20px;
+        top: -10px;
     }
 }
 .etoile2{
     position: relative;
-    top: 1%;
+    top: 10px;
 }
 @media screen and (max-width: 767px){
     .etoile2{
@@ -555,7 +555,7 @@ h4{
     top: -20px;
     }
 }
-#footerheb{
+#footer-heb{
     margin-top: -20px;
     margin-left: 2.5%;
 }
@@ -566,7 +566,7 @@ h4{
     }
 }
 @media screen and (max-width: 767px){
-    #footerheb{
+    #footer-heb{
         position: relative;
         top: 570px;
         margin-left: 5%;
@@ -587,7 +587,7 @@ h4{
         top:450px;
     }
 }
-.headeract{
+.header-act{
     display: block;
     width: 100%;
     margin-top: 2.5%;
@@ -636,7 +636,7 @@ h4{
         box-shadow: 10px 10px 10px 10px #deebff;
     }
 }
-.imgbox3{
+.img-boite3{
         display: flex;
         justify-content: center;
         width: 100%;
@@ -645,11 +645,11 @@ h4{
         overflow: hidden;
 }
 @media screen and (max-width: 991px){
-    .imgbox3{
+    .img-boite3{
     height: 80%;
     }
 }
-.imagesize3{
+.image-taille3{
     width: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -731,7 +731,7 @@ h4{
         box-shadow: 10px 10px 10px 10px #deebff;
     }
 }
-.imagesize4{
+.image-taille4{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     overflow: hidden;
