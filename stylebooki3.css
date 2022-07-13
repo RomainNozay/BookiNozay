@@ -32,10 +32,15 @@ main{
 }
 a{
     text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#lien-logo{
+    text-decoration: none;
     color:black;
     display: block;
-    width:100%;
-    height:100%;
 }
 @media screen and (max-width: 991px){
     #lien-logo{
@@ -60,18 +65,18 @@ header{
     justify-content: center;
     align-items: center;}
 }
-nav{
+#navigateur{
     display: flex;
     justify-content: space-between;
     bottom: 100px;
     width: 250px;}
 @media screen and (max-width: 991px){
-    nav{
+    #navigateur{
         width: 100%;
         display: flex;
     }
 }
-nav > a{
+.lien-nav{
     display: flex;
     align-items: center;
     padding:0 20px;
@@ -79,19 +84,20 @@ nav > a{
     text-decoration: none;
     color: black;}
 @media screen and (max-width: 991px){
-    nav > a{
+   .lien-nav{
         margin-top: 20px;
         padding-bottom: 5px;
         border-bottom: #f2f2f2 2px solid;
         display: flex;
-        justify-content: center;}
+        justify-content: center;
+        width: 50%;}
     }
-nav > a:hover{
+ .lien-nav:hover{
     border-top: 2px #0065FC solid;
     color: #0065FC;
 }
 @media screen and (max-width: 991px){
-    nav > a:hover{
+    .lien-nav:hover{
         border-bottom: 2px #0065FC solid;
         border-top: 0px white solid;
     }
@@ -99,11 +105,14 @@ nav > a:hover{
 #haut{
     margin-top: 0;
 }
-#haut > div{
-margin-bottom: 20px;
-}
-#haut p{
-    font-size: 14px;
+
+@media screen and (max-width: 991px) {
+    #titrepage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 h1{margin-bottom: 0;}
 .soustitre{margin-top: 0;}
@@ -253,16 +262,6 @@ input::placeholder{
     align-items: center;
     position: relative;
 }
-@media screen and (max-width: 991px){
- #resultat{
-   margin-top: 50px;
-}
-}
-@media screen and (max-width: 676px){
-    #resultat{
-      margin-top: 80px;
-   }
-   }
 #logoi{
     display: flex;
     align-items: center;
@@ -404,8 +403,6 @@ strong{
     margin-left: 5px;
 }
 h4{
-    display: block;
-    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -421,14 +418,13 @@ h4{
 .fa-solid{
     margin: 5px;
     width: auto;
-}
+}   
 .fa-star{
     color:#0065FC;
     width:2px;
     height:2px
 }
 .lien-pop{
-    color: black;
     display: flex;
     align-items: center;
 }
@@ -499,10 +495,11 @@ h4{
 .texteheb{
     display:flex;
     flex-direction: column;
-    width: 90%;
-    margin-top:25px;
-    justify-content: flex-start;
+    width: 100%;
     margin-left: 2px;
+    position: relative;
+    top: 10px;
+    justify-content:space-between;
 }
 @media screen and (max-width: 991px){
     .texteheb{
@@ -516,24 +513,46 @@ h4{
     }
 }
 .texteprix{
-    margin:5px;
+    margin: 0px;
     position: relative;
-    top:-30px;
+    top: -5px;
+}
+@media screen and (max-width: 767px){
+    .texteprix{
+    position: relative;
+    top:-25px;
+    left: 5px;
+    }
+}
+.texteprix1{
+    margin: 0px;
+    position:relative;
+    top: -5px;
+}
+@media screen and (max-width:1056px) {
+    .texteprix1{
+        position: relative;
+        top: -25px;
+    }
+}
+.etoile1{
+    position: relative;
+    top: 1%;
+}  
+@media screen and (max-width:1056px) {
+    .etoile1{
+        position: relative;
+        top: -20px;
+    }
 }
 .etoile2{
     position: relative;
-    margin-top: -10%;
-}
-@media screen and (max-width: 1172px){
-    .etoile2{
-    position: relative;
-    top:-15px;
-    }
+    top: 1%;
 }
 @media screen and (max-width: 767px){
     .etoile2{
     position: relative;
-    top:-25px;
+    top: -20px;
     }
 }
 #footerheb{
@@ -543,14 +562,13 @@ h4{
 @media screen and (max-width: 991px){
     #footerheb{
         position: relative;
-        top: 75px;
-        margin-left: 3%;
+        top: 100px;
     }
 }
 @media screen and (max-width: 767px){
     #footerheb{
         position: relative;
-        top: 550px;
+        top: 570px;
         margin-left: 5%;
     }
 }
@@ -581,7 +599,7 @@ h4{
     justify-content: space-between;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     #zone-act{
         display: flex;
         flex-direction: column;
@@ -595,14 +613,14 @@ h4{
     box-shadow: 0 0 10px grey;
     border-radius: 25px;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .carte-act{
     width: 100%;
     height: 45%;
     margin-bottom: 30px;
     }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .lien-act{
     width: 100%;
     object-fit: cover;
@@ -612,7 +630,7 @@ h4{
 .carte-act:hover{
     transform: scale(1.1);
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .carte-act:hover{
         transform: scale(1);
         box-shadow: 10px 10px 10px 10px #deebff;
@@ -626,7 +644,7 @@ h4{
         border-radius: 25px 25px 0 0;
         overflow: hidden;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .imgbox3{
     height: 80%;
     }
@@ -648,13 +666,9 @@ h4{
     justify-content: space-between;
     width: 22%;  
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .carte-act2{
-    height: 100%;
-    }
-}
-@media screen and (max-width: 767px){
-    .carte-act2{
+        height:100%;
         width: 100%;
         justify-content: space-around; 
     }
@@ -680,7 +694,7 @@ h4{
     overflow: hidden;
     object-fit: cover;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .lien-act1{
     height: 50%;
     margin-bottom: 30px;
@@ -689,7 +703,7 @@ h4{
 .lien-act1:hover{
     transform: scale(1.1);
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .lien-act1:hover{
         transform: scale(1);
         box-shadow: 10px 10px 10px 10px #deebff;
@@ -702,7 +716,7 @@ h4{
     overflow: hidden;
     object-fit: cover;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .lien-act2{
     height: 50%;
     margin-bottom: 30px;
@@ -711,7 +725,7 @@ h4{
 .lien-act2:hover{
     transform: scale(1.1);
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 991px){
     .lien-act2:hover{
         transform: scale(1);
         box-shadow: 10px 10px 10px 10px #deebff;
@@ -732,6 +746,14 @@ h4{
     position: relative;
     left:-2.5%;
     top:90px;
+}
+@media screen and (max-width: 991px){
+    #footer{
+     display: flex;
+     height: 600px;
+     position:relative ;
+     top: 950px;
+    }
 }
 @media screen and (max-width: 767px){
     #footer{
