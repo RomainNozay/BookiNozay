@@ -2,6 +2,7 @@ html {
     font-family: 'Raleway', sans-serif;
     width:100%;
     color:black;
+    max-width: 2000px;
 }
 body{
     margin:0px;
@@ -19,13 +20,11 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin:0;
     background-color: white;
     color:black;
     margin-left: 3%;
     margin-right: 3%;
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -33,50 +32,33 @@ a{
     width: 100%;
     height: 100%;
 }
-
-#lien-logo{
+.lien-logo{
     text-decoration: none;
     color:black;
-    display: block;
 }
-
-header{
+.En_tete{
     display: flex;
-    justify-content: space-between;
-    position: relative;
-} 
-
-#navigateur{
+    justify-content: space-between;}    
+.navigateur{
     display: flex;
     justify-content: space-between;
     bottom: 100px;
     width: 250px;}
-
 .lien-nav{
     display: flex;
     align-items: center;
     padding:0 20px;
     border-top: 2px white solid;
-    text-decoration: none;
-    color: black;}
-
- .lien-nav:hover{
+    }
+.lien-nav:hover{
     border-top: 2px #0065FC solid;
-    color: #0065FC;
-}
-
-#Accroche{
-    margin-top: 0;
-}
-
-
+    color: #0065FC;}
 h1{margin-bottom: 0;}
 .soustitre{margin-top: 0;}
-#zone-recherche{
+.zone-recherche{
     display: flex;
     height: 50px;
-    margin-bottom: 25px;}
-    
+    margin-bottom: 25px;}  
 .icone1{
     display: flex;
     background-color: #f2f2f2;
@@ -84,14 +66,15 @@ h1{margin-bottom: 0;}
     justify-content: center;
     width: 50px;
     border-radius: 10px 0 0 10px;
-    overflow: auto;
     border: white;
     cursor: pointer;
+}
+.fa-location-dot::before{
+   font-size: large;
 }
 .barre-recherche{
     width: 250px;
     font-weight: bold;
-    border:0px;
     border: 1px solid #f2f2f2;
     background-color: white;
 }
@@ -112,51 +95,37 @@ input::placeholder{
     border: none;
     border-radius: 0 10px 10px 0;
     font-size: 16px;
-    overflow: hidden;
     padding-left: 30px;
 }
-
 .icone-loupe{
     visibility: hidden;
 }
-
-#tous-les-filtres{
+.tous-les-filtres{
     display: flex;
     width: 85%;
-    height: 100%;
     align-items: center;
 }
-
 .titre-filtre{
-    display: flex;
-    width: 8%;
-    margin-right: 20px;
+    margin-right: 10px;
 }
-
-
-
-#zone-filtres{
+.zone-filtres{
     display: flex;
     justify-content: space-between;
     width: 70%;
     flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 20px;
 }
-
 .filtres{
     border: 2px solid #f2f2f2;
     border-radius: 25px;
     display: flex;
     align-items: center;
     overflow: visible;
-    font-weight: bold;
     height: 45px;
     background-color: white;
     margin-right: 10px;
     margin-top: 20px;
 }
-
 .filtres:hover{
     background-color: #deebff;
     border: #deebff solid 1px;
@@ -183,16 +152,11 @@ input::placeholder{
     
     font-size: 18px;
 }
-#resultat_recherche{
+.resultat_recherche{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    position: relative;
 }
-#logo-i{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo-i{
     width: 25px;
     height: 25px;
     border: solid 1px #f2f2f2;
@@ -200,48 +164,47 @@ input::placeholder{
     font-size: 15px;
     color: #0065FC;
     margin-right: 15px;
-}
 
-#Hebergement_Populaire{
+}
+.logo-i::before{
+    position: relative;
+    left: 9px;
+    top: 4px;
+}
+.Hebergement_Populaire{
     display:flex;
     justify-content: space-between;
     margin-top: 25px;
 }
-
-.header-heb{
-    display: block;
+.En_tete_heb{
     width: 100%;
     margin-top: 2.5%;
     margin-left: 3%;
 }
-
-#zone-hebergemnt{
+.zone-hebergemnt{
     display: flex;
     flex-direction: column;
     width: 66%;
-    height: 700px;
+    height: 750px;
     background-color: #f2f2f2;
     border-radius: 25px;
     flex-wrap: wrap;
     }
-
-#zone-populaire{
+.zone-populaire{
     display: flex;
     flex-direction: column;
     width:33%;
-    height: 700px;
+    height: 750px;
     background-color: #f2f2f2;
     border-radius: 25px;
 }
-
-#header-pop{
+.En_tete_pop{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     top: 10px;
 }
-
 .populaire{
     margin-top: 3%;
     margin-left: 4%;
@@ -252,7 +215,7 @@ input::placeholder{
     right: 40px;
     font-size: 20px;
 }
-#zone-carte{
+.zone-carte{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -279,9 +242,6 @@ alt{visibility: hidden;}
     display: flex;
     width: 40%;
     height: 95%;
-    border-radius: 25px 0 0 25px;
-    overflow: hidden;
-    object-fit: cover;
 }
 .img-taille{
     display:flex;
@@ -299,13 +259,11 @@ alt{visibility: hidden;}
     width: 60%;
     justify-content: space-around;
 }
-
 .texte-prix1{
     position: relative;
     top: -45px;
     left: 5px;
 }
-
 strong{
     margin-left: 5px;
 }
@@ -317,7 +275,6 @@ h4{
     top: -20px;
     
 }
-
 .etoile{
     margin-left: 5px;
     margin-bottom:-10%;
@@ -340,7 +297,7 @@ h4{
     width: 100%;
     height: 100%;
 }
-#zone-heb{
+.zone-heb{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -348,12 +305,9 @@ h4{
     height: 80%;
     width: 100%;}
 .carte-heb{
-    display: flex;
     width:28%;
-    flex-direction: column;
     background-color: white;
     border-radius: 25px; 
-    align-items: center;
     height: 40%;
     }
 .carte-heb:hover{
@@ -364,83 +318,74 @@ h4{
         justify-content: center;
         width: 100%;
         height: 50%;
-        border-radius: 25px 25px 0 0;
-        overflow: hidden;
-        margin-top: 2.5%;
-        object-fit: cover;       
+        margin-top: 2.5%;      
 }
-
 .img-taille2{
     border-radius: 25px 25px 0 0 ;
     width: 95%;
-    overflow-y: hidden;
     object-fit: cover;
     }
 .texte-heb{
     display:flex;
     flex-direction: column;
-    width: 100%;
     margin-left: 2px;
     position: relative;
     top: 10px;
-    justify-content:space-between;
 }
 .texte-prix{
     margin: 0px;
     position: relative;
     top: -5px;
+    left: 5px;
 }
 .texte-prix1{
     margin: 0px;
     position:relative;
     top: -5px;
 }
+.texte-prix2{
+    position: relative;
+    top: -40px;
+    left:2%;
+}
 .etoile1{
     position: relative;
     top: 10px;
 }  
-
 .etoile2{
     position: relative;
     top: 10px;
 }
-#footer-heb{
+.Pied_de_page_heb{
     margin-top: -20px;
     margin-left: 2.5%;
 }
-#activites{
+.activites{
     display:flex;
     flex-direction: column;
     width:100%;
     height: 500px;
     margin-bottom: 20px;
 }
-
-.header-act{
+.En_tete_act{
     display: block;
     width: 100%;
     margin-top: 2.5%;
     margin-bottom: 1%;
 }
-#zone-act{
+.zone-act{
     display: flex;
     height: 90%;
     justify-content: space-between;
 }
-
 .carte-act{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 22%;
     box-shadow: 0 0 10px grey;
     border-radius: 25px;
 }
-
 .carte-act:hover{
     transform: scale(1.1);
 }
-
 .img-boite3{
         display: flex;
         justify-content: center;
@@ -449,81 +394,63 @@ h4{
         border-radius: 25px 25px 0 0;
         overflow: hidden;
 }
-
 .image-taille3{
     width: 100%;
-    border-radius: 20px 20px 0 0;
     object-fit: cover;
-    overflow: hidden;
 }
 .texte-act{
     margin-top: 32px;
     margin-left: 2.5%;
 }
-
 .carte-act2{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     width: 22%;  
 }
-
 .activite2{
     height: 80%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 20px 20px 0 0;
 }
 .activite3{
     height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 20px 20px 0 0;
 }
 .lien-act1{
     height: 50%;
     box-shadow: 0 0 10px grey;
     border-radius: 20px;
     overflow: hidden;
-    object-fit: cover;
 }
-
 .lien-act1:hover{
     transform: scale(1.1);
 }
-
 .lien-act2{
     height: 35%;
     box-shadow: 0 0 10px grey;
     border-radius: 20px;
     overflow: hidden;
-    object-fit: cover;
 }
-
 .lien-act2:hover{
     transform: scale(1.1);
 }
-
 .image-taille4{
-    border-radius: 20px 20px 0 0;
     object-fit: cover;
-    overflow: hidden;
     height: 100%;
 }
-
-#Pied_de_page{
+.Pied_de_page{
     display: flex;
     width: 103%;
-    height: 200px;
     align-items: flex-start;
     background-color: #f2f2f2;
     position: relative;
     left:-2.5%;
     top:90px;
 }
-
 .apropos{
     display: flex;
     width: 35%;
@@ -541,14 +468,14 @@ h4{
 }
 ul{
     list-style: none;
-    margin-left: -10.5%;
     margin-top: -10px;
     line-height: 2;
     width: 100%;
+    position: relative;
+    left: -45px;
 }
 @media screen and (max-width: 1312px){
     .titre-filtre{
-    display: flex;
     position: relative;
     top: -35px;}}
 @media screen and (max-width:1056px) {
@@ -559,39 +486,31 @@ ul{
     position: relative;
     top: -10px;}}
 @media screen and (max-width: 991px){
-    .main{
-        margin-right: 3%;}
-    #lien-logo{
+    .lien-logo{
         display: flex;
         justify-content: center;}
-    #logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;}
-    header{
+    .En_tete{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;}
-    #navigateur{
-        width: 100%;
-        display: flex;}
-        .lien-nav{
+    .navigateur{
+        width: 100%;}
+    .lien-nav{
         margin-top: 20px;
         padding-bottom: 5px;
         border-bottom: #f2f2f2 2px solid;
         display: flex;
-        justify-content: center;
-        width: 50%;}
+        justify-content: center;}
     .lien-nav:hover{
         border-bottom: 2px #0065FC solid;
         border-top: 0px white solid;}
-    #titrepage{
+    .titrepage{
         display: flex;
         flex-direction: column;
         align-items: center;}
-    #zone-recherche{
+    .zone-recherche{
         display: flex;
         justify-content: center;}
     .fond-recherche{
@@ -602,34 +521,32 @@ ul{
         visibility: visible;
         position: relative;
         right: 55px;}
-    #tous-les-filtres{
+    .tous-les-filtres{
         display: flex;
         flex-direction: column;}
     .titre-filtre{
         display: flex;
         width: 100%;
         top: 20px;}
-    #zone-filtres{
+    .zone-filtres{
         width: 100%;}
-    #Hebergement_Populaire{
+    .Hebergement_Populaire{
         display: flex;
         flex-direction: column-reverse;}
-    #zone-hebergemnt{
+    .zone-hebergemnt{
         background-color: white;
         width: 100%;
         height: 1200px;}
-    #zone-populaire{
+    .zone-populaire{
         width: 100%;
         border-radius: 0 0 0 0 ;
         margin-bottom: 15px;
-        height: 800px;} 
-    #header-pop{
-        display:flex;
-        justify-content: space-between;
-        flex-direction: row;}
+        height: 800px;}
+    .etoile-noir:before{
+        right:60px} 
+    .texte-prix2{
+        left: 1%;}
     .texte-pop{
-        display: flex;
-        flex-direction: column;
         position: relative;
         top: -25px;}
     .texte-prix1{
@@ -637,8 +554,6 @@ ul{
         top: -5px;}
     .carte-heb{
         width: 45%;
-        display: flex;
-        justify-content: center;
         box-shadow: 0 0 10px grey;
         margin-bottom: 15px;
         height: 35%;}
@@ -649,10 +564,10 @@ ul{
     .etoile1{
         position: relative;
         top: 10px;}
-    #footer-heb{
+    .Pied_de_page_heb{
         position: relative;
         top: 100px;}
-    #zone-act{
+    .zone-act{
         display: flex;
         flex-direction: column;}
     .carte-act{
@@ -670,8 +585,7 @@ ul{
         height: 80%;}
     .carte-act2{
         height:100%;
-        width: 100%;
-        justify-content: space-around; }
+        width: 100%;}
     .lien-act1{
         height: 50%;
         margin-bottom: 30px;}
@@ -684,22 +598,17 @@ ul{
     .lien-act2:hover{
         transform: scale(1);
         box-shadow: 10px 10px 10px 10px #deebff;}
-    #Pied_de_page{
-        display: flex;
-        height: 600px;
+    .Pied_de_page{
         position:relative ;
-        top: 950px;}}
+        top: 950px;}
+    }
 @media screen and (max-width: 767px){
-        .header-heb{
+        .En_tete_heb{
             margin-left: 5%;}
-        #zone-heb{
-            display: flex;
-            align-items: center;}
         .carte-heb{
             width:90%;
             height: 25%;}
         .texte-heb{
-            margin-top: 10px;
          margin-left: 10px;}
         .texte-prix{
             position: relative;
@@ -714,19 +623,16 @@ ul{
         .etoile2{
             position: relative;
             top: -20px;}
-        #footer-heb{
+        .Pied_de_page_heb{
             position: relative;
             top: 570px;
             margin-left: 5%;}
-        #activites{
-            display: flex;
-            flex-direction: column;
+        .activites{
             position: relative;
             top:450px;}
-        #Pied_de_page{
+        .Pied_de_page{
             display: flex;
             flex-direction: column;
-            height: 600px;
             position:relative ;
             top: 1400px;}
         .apropos{
@@ -734,7 +640,7 @@ ul{
             margin-left: 1.5%;}
         ul{
                 margin-top: 20px;
-                margin-left: -51px;}}  
+                margin-left: -5px;}}  
         
 
 
