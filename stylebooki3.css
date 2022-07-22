@@ -335,13 +335,13 @@ h4{
 .texte-prix{
     margin: 0px;
     position: relative;
-    top: -5px;
+    top: -15px;
     left: 5px;
 }
 .texte-prix1{
     margin: 0px;
     position:relative;
-    top: -5px;
+    top: -15px;
 }
 .texte-prix2{
     position: relative;
@@ -470,13 +470,13 @@ ul{
     .titre-filtre{
     position: relative;
     top: -35px;}}
-@media screen and (max-width:1056px) {
+@media screen and (max-width:1067px) {
     .texte-prix1{
     position: relative;
     top: -25px;}
     .etoile1{
     position: relative;
-    top: -10px;}}
+    top: -15px;}}
 @media screen and (max-width: 991px){
     .lien-logo{
         display: flex;
@@ -543,7 +543,7 @@ ul{
         top: -25px;}
     .texte-prix1{
         position: relative;
-        top: -5px;}
+        top: -15px;}
     .carte-heb{
         width: 45%;
         box-shadow: 0 0 10px grey;
