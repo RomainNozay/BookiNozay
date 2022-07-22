@@ -181,7 +181,7 @@ input::placeholder{
     margin-top: 2.5%;
     margin-left: 3%;
 }
-.zone-hebergemnt{
+#zone-hebergemnt{
     display: flex;
     flex-direction: column;
     width: 66%;
@@ -360,7 +360,7 @@ h4{
     margin-top: -20px;
     margin-left: 2.5%;
 }
-.activites{
+#activites{
     display:flex;
     flex-direction: column;
     width:100%;
@@ -533,7 +533,7 @@ ul{
     .Hebergement_Populaire{
         display: flex;
         flex-direction: column-reverse;}
-    .zone-hebergemnt{
+    #zone-hebergemnt{
         background-color: white;
         width: 100%;
         height: 1200px;}
@@ -627,7 +627,7 @@ ul{
             position: relative;
             top: 570px;
             margin-left: 5%;}
-        .activites{
+        #activites{
             position: relative;
             top:450px;}
         .Pied_de_page{
